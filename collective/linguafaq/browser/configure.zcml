@@ -1,0 +1,29 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="collective.linguafaq">
+
+  <include package="plone.app.contentmenu" />
+
+  <!-- -*- extra stuff goes here -*- -->
+
+  <browser:page
+      for="*"
+      name="faqview"
+      class=".faqview.faqView"
+      template="faqview.pt"
+      allowed_interface=".faqview.IfaqView"
+      permission="zope.Public"
+      />
+  
+  <browser:page
+      for="*"
+      name="faq_second_view"
+      class=".faqview.faqView"
+      template="faq_second_view.pt"
+      allowed_interface=".faqview.IfaqView"
+      permission="zope.Public"
+      />
+
+
+</configure>
