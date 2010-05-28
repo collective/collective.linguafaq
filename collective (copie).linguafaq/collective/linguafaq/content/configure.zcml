@@ -1,0 +1,30 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    i18n_domain="collective.linguafaq">
+
+  <!-- configure your content components here -->
+  
+  <!-- -*- extra stuff goes here -*- -->
+  <class class=".faqitem.FaqItem">
+    <require
+        permission="zope2.View"
+        interface="..interfaces.IFaqItem"
+        />
+  </class>
+  
+  <class class=".faqfolder.FaqFolder">
+    <require
+        permission="zope2.View"
+        interface="..interfaces.IFaqFolder"
+        />
+  </class>
+  
+  <class class=".faqgroup.FaqGroup">
+    <require
+        permission="zope2.View"
+        interface="..interfaces.IFaqGroup"
+        />
+  </class>
+
+</configure>

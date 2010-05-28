@@ -1,0 +1,58 @@
+# Gettext Message File for collective.linguafaq
+msgid ""
+msgstr ""
+"Project-Id-Version: collective.linguafaq 1.0\n"
+"POT-Creation-Date: 2010-05-26 14:08+0000\n"
+"PO-Revision-Date: 2010-05-26 18:17+0200\n"
+"Last-Translator: benoit suttor <bsuttor@cirb.irisnet.be>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: collective.linguafaq\n"
+
+msgid "faqfolder"
+msgstr "Faq Folder"
+
+msgid "faqfolderdescription"
+msgstr "Faq Folder desc"
+
+
+msgid "faqitem"
+msgstr "A Faq"
+
+msgid "faqitemdescription"
+msgstr "A Faq desc"
+
+
+msgid "faqgroup"
+msgstr "A faq group"
+
+msgid "faqgroupdescription"
+msgstr "A Faq desc"
+
+
+msgid "faqquestion"
+msgstr "Question"
+
+msgid "faqquestiondesc"
+msgstr "A Question"
+
+
+msgid "faqanswer"
+msgstr "Answer"
+
+msgid "faqanswerdesc"
+msgstr "A answer to a question"
+
+#view
+msgid "faq_view_view"
+msgstr "Faq group view"
+
+msgid "faq_second_view"
+msgstr "Faq view"
+

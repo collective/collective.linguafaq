@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<object name="portal_skins">
+
+ <object name="linguafaq_images"
+    meta_type="Filesystem Directory View"
+    directory="collective.linguafaq:skins/linguafaq_images"/>
+    
+ <object name="linguafaq_scripts"
+    meta_type="Filesystem Directory View"
+    directory="collective.linguafaq:skins/linguafaq_scripts"/>
+
+ <skin-path name="*" based-on="Plone Default">
+  <layer name="linguafaq_images"
+     insert-after="custom"/>
+ </skin-path>
+ 
+ <skin-path name="*" based-on="Plone Default">
+  <layer name="linguafaq_scripts"
+     insert-after="linguafaq_images"/>
+ </skin-path>
+
+</object>
