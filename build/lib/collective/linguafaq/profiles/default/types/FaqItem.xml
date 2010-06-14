@@ -1,25 +1,20 @@
 <?xml version="1.0"?>
-<object name="FaqGroup"
+<object name="FaqItem"
    meta_type="Factory-based Type Information with dynamic views"
    i18n:domain="collective.linguafaq" xmlns:i18n="http://xml.zope.org/namespaces/i18n">
-  <property name="title" i18n:translate="faqgroup">faqgroup</property>
+  <property name="title" i18n:translate="faqitem">faqitem</property>
   <property name="description"
-    i18n:translate="faqgroupdesciption">classify faq</property>
-  <property name="content_meta_type">FaqGroup</property>
-  <property name="content_icon">faqgroup.gif</property>
+    i18n:translate="faqitemdescription">one question and one answer</property>
+  <property name="content_meta_type">FaqItem</property>
+  <property name="content_icon">faqitem.gif</property>
   <property name="product">collective.linguafaq</property>
-  <property name="factory">addFaqGroup</property>
+  <property name="factory">addFaqItem</property>
   <property name="immediate_view">atct_edit</property>
   <property name="global_allow">False</property>
-  <property name="filter_content_types">True</property>
-  <property name="allowed_content_types">
-    <element value="FaqItem" />
-  </property>
+  <property name="filter_content_types">False</property>
   <property name="allow_discussion">False</property>
-  <property name="default_view">faqview</property>
+  <property name="default_view">base_view</property>
   <property name="view_methods">
-    <element value="faqview" />
-    <element value="faq_second_view" />
     <element value="base_view" />
   </property>
   <alias from="(Default)" to="(dynamic view)" />

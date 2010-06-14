@@ -1,0 +1,28 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="collective.linguafaq">
+<body>
+    <div metal:fill-slot="main">
+
+        <tal:main-macro metal:define-macro="main"
+                        tal:define="group view/getAllSubfolder;">
+
+            <div tal:repeat="agroup group">
+            
+                <tal:block tal:define="thetype agroup/type">  
+                    <a tal:condition="python:thetype=='faqgroup'" href="" tal:attributes="href agroup/faqurl">
+                        <h3 tal:content="agroup/title">
+                            title
+                        </h3>                
+                    </a>
+                    <a tal:condition="python:thetype=='faqitem'" href="" tal:attributes="href agroup/faqurl">
+                        <span tal:content="agroup/title">title</span>
+                    </a>
+                </tal:block>
+            </div>
+            
+        </tal:main-macro>
+    </div>
+</body>
+</html>

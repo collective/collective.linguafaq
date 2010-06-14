@@ -1,3 +1,5 @@
+CHANGES.txt
+CONTRIBUTORS.txt
 MANIFEST.in
 README.txt
 setup.cfg
@@ -31,8 +33,12 @@ collective/linguafaq/interfaces/faqfolder.py
 collective/linguafaq/interfaces/faqgroup.py
 collective/linguafaq/interfaces/faqitem.py
 collective/linguafaq/locales/collective.linguafaq.pot
+collective/linguafaq/locales/fr/LC_MESSAGES/collective.linguafaq-fr.mo
+collective/linguafaq/locales/fr/LC_MESSAGES/collective.linguafaq-fr.po
 collective/linguafaq/locales/fr/LC_MESSAGES/collective.linguafaq.mo
 collective/linguafaq/locales/fr/LC_MESSAGES/collective.linguafaq.po
+collective/linguafaq/locales/nl/LC_MESSAGES/collective.linguafaq-nl.mo
+collective/linguafaq/locales/nl/LC_MESSAGES/collective.linguafaq-nl.po
 collective/linguafaq/locales/nl/LC_MESSAGES/collective.linguafaq.mo
 collective/linguafaq/locales/nl/LC_MESSAGES/collective.linguafaq.po
 collective/linguafaq/portlets/__init__.py
@@ -58,3 +64,9 @@ collective/linguafaq/skins/linguafaq_scripts/linguafaq.css.dtml
 collective/linguafaq/tests/__init__.py
 collective/linguafaq/tests/base.py
 collective/linguafaq/tests/test_doctest.py
+dist/collective.linguafaq-0.1dev-r118339.tar.gz
+dist/collective.linguafaq-0.1dev-r118339.win32.exe
+docs/HISTORY.txt
+docs/INSTALL.txt
+docs/LICENSE.GPL
+docs/LICENSE.txt
