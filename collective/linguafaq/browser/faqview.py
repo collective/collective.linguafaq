@@ -38,32 +38,53 @@ class faqView(BrowserView):
 
        
     def getAllFaq(self):
-        results=[]
-        cat = self.portal_catalog
-        path = "/".join(self.context.getPhysicalPath())
-        items = cat.searchResults( {'portal_type' :'FaqItem','path':path} )
-        for item in items :
-            obj = item.getObject()
-            results.append({"title":obj.Title(),"answer":obj.getAnswer()})
-        
-        return results
-        
-    def getAllSubfolder(self):
-        results=[]
+        results = []
         cat = self.portal_catalog
         folder_path = "/".join(self.context.getPhysicalPath())
-        items = cat.searchResults(path={'query': folder_path, 'depth': 1})
+        items = cat.searchResults(path={'query': folder_path, 'depth': 1}, 
+                                sort_on='sortable_title', sort_order='ascending')
         for item in items :
-            obj = item.getObject()
-            lurl = '/'.join(obj.getPhysicalPath())
-            hrefurl = '%s%s' %(self.context.portal_url(),lurl)
-            results.append({"title":obj.Title(), "type":obj.Type(), "faqurl": hrefurl})
+            obj = item.getObject()            
             if obj.Type()=='faqgroup':
-                faqitems= cat.searchResults( {'portal_type' :'FaqItem','path':lurl} )
-                for faqitem in faqitems :
-                    objitem = faqitem.getObject()
-                    lurl = '/'.join(objitem.getPhysicalPath())
-                    hrefurl = '%s%s' %(self.context.portal_url(),lurl)
-                    results.append({"title":objitem.Title(),"type":objitem.Type(), "faqurl":hrefurl})
+                group={}
+                group['title']=obj.Title()
+                group['url']=obj.absolute_url()
+                list_faq=[]
+                url = '/'.join(obj.getPhysicalPath())
+                faqitems = cat.searchResults( {'portal_type' :'FaqItem','path':url} , 
+                                sort_on='sortable_title', sort_order='ascending')
+                for faqitem in faqitems:
+                    objfaq = faqitem.getObject()
+                    list_faq.append({"title": objfaq.Title(), "answer": objfaq.getText(), "url": objfaq.absolute_url()})
+                group['faqs'] = list_faq
+                group['answer'] = ""
+                results.append(group)
+            else:
+                results.append({"title": obj.Title(), "answer": obj.getText(),"faqs":[], "url": obj.absolute_url()})
+        return results
+        
+    def getAllIndex(self):
+        results = []
+        cat = self.portal_catalog
+        folder_path = "/".join(self.context.getPhysicalPath())
+        items = cat.searchResults(path={'query': folder_path, 'depth': 1}, 
+                                sort_on='sortable_title', sort_order='ascending')
+        for item in items :
+            obj = item.getObject()            
+            if obj.Type()=='faqgroup':
+                group={}
+                group['title']=obj.Title()
+                group['url']=obj.absolute_url()
+                list_faq=[]
+                url = '/'.join(obj.getPhysicalPath())
+                faqitems = cat.searchResults( {'portal_type' :'FaqItem','path':url} , 
+                                sort_on='sortable_title', sort_order='ascending')
+                for faqitem in faqitems:
+                    objfaq = faqitem.getObject()
+                    list_faq.append({"title": objfaq.Title(), "url": objfaq.absolute_url()})
+                group['faqs'] = list_faq
+                results.append(group)
+            else:
+                results.append({"title": obj.Title(), "faqs":[], "url": obj.absolute_url()})
         return results
     

@@ -9,18 +9,18 @@
 
   <browser:page
       for="*"
-      name="faqview"
+      name="index_view"
       class=".faqview.faqView"
-      template="faqview.pt"
+      template="templates/index_view.pt"
       allowed_interface=".faqview.IfaqView"
       permission="zope.Public"
       />
   
   <browser:page
       for="*"
-      name="faq_second_view"
+      name="all_view"
       class=".faqview.faqView"
-      template="faq_second_view.pt"
+      template="templates/all_view.pt"
       allowed_interface=".faqview.IfaqView"
       permission="zope.Public"
       />

@@ -4,7 +4,7 @@
    i18n:domain="collective.linguafaq" xmlns:i18n="http://xml.zope.org/namespaces/i18n">
   <property name="title" i18n:translate="faqfolder">faqfolder</property>
   <property name="description"
-    i18n:translate="faqfolderdescription">Description of the Example Type</property>
+    i18n:translate="faqfolderdescription">Description of the FAQ</property>
   <property name="content_meta_type">FaqFolder</property>
   <property name="content_icon">faqfolder.gif</property>
   <property name="product">collective.linguafaq</property>
@@ -17,10 +17,10 @@
     <element value="FaqGroup" />
   </property>
   <property name="allow_discussion">False</property>
-  <property name="default_view">faqview</property>
+  <property name="default_view">all_view</property>
   <property name="view_methods">
-    <element value="faqview" />
-    <element value="faq_second_view" />
+    <element value="index_view" />
+    <element value="all_view" />
   </property>
   <alias from="(Default)" to="(dynamic view)" />
   <alias from="edit" to="atct_edit" />

@@ -46,9 +46,9 @@ msgid "faqanswerdesc"
 msgstr "Een antwoord voor de vraag"
 
 # view
-msgid "faq_view_view"
-msgstr "Zie group Faq "
+msgid "index_view"
+msgstr "Zie index FAQ"
 
-msgid "faq_second_view"
-msgstr "Zie faq in lijst"
+msgid "all_view"
+msgstr "Zie alle FAQ"
 

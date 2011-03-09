@@ -47,9 +47,9 @@ msgid "faqanswerdesc"
 msgstr "Une réponse à la question"
 
 #view
-msgid "faq_view_view"
-msgstr "Vue Faq par groupe"
+msgid "index_view"
+msgstr "Index de la FAQ"
 
-msgid "faq_second_view"
-msgstr "Vue faq en liste"
+msgid "all_view"
+msgstr "Toute la FAQ"
 

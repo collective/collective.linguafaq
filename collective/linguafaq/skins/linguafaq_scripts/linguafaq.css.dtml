@@ -1,3 +1,22 @@
 #faqitem-base-edit #archetypes-fieldname-description{
 display:none;
 }
+
+hr.separateindex{
+background-color: #FFFFFF;
+color: #FFFFFF;
+border-bottom: 
+dashed #ECECEC 1px;
+width:100%;
+}
+
+ul.indexfaq {
+width:100%;
+}
+ul.indexfaq li {
+display:block;
+}
+
+a.to-the-top {
+float:right;
+}

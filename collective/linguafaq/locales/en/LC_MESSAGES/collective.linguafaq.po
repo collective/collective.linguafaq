@@ -7,49 +7,48 @@ msgstr ""
 "Last-Translator: Suttor <bsuttor@cirb.irisnet.be>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0\n"
-"Language-Code: fr\n"
-"Language-Name: French\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: collective.linguafaq\n"
-"X-Is-Fallback-For: fr-be fr-ca fr-lu fr-mc fr-ch fr-fr\n"
 
 msgid "faqfolder"
-msgstr "Dossier FAQ"
+msgstr "FAQ Folder"
 
 msgid "faqfolderdescription"
-msgstr "Dossier principal pour contenir des Faq"
+msgstr "Description FAQ folder"
 
 msgid "faqitem"
-msgstr "Une Faq"
+msgstr "A FAQ"
 
 msgid "faqitemdescription"
-msgstr "Une question et une réponse"
+msgstr "A question en an answer"
 
 msgid "faqgroup"
-msgstr "Groupe de FAQ"
+msgstr "FAQ gourp"
 
 msgid "faqgroupdescription"
-msgstr "Theme pour plusieurs FAQ"
+msgstr "faqgroupdescription"
 
 msgid "faqquestion"
 msgstr "Question"
 
 msgid "faqquestiondesc"
-msgstr "Une question"
+msgstr "A question"
 
 msgid "faqanswer"
-msgstr "Réponse"
+msgstr "Answer"
 
 msgid "faqanswerdesc"
-msgstr "Une réponse à la question"
+msgstr "An answer for a question"
 
-#view
-msgid "faq_view_view"
-msgstr "Vue Faq par groupe"
+# view
+msgid "index_view"
+msgstr "View index FAQ"
 
-msgid "faq_second_view"
-msgstr "Vue faq en liste"
+msgid "all_view"
+msgstr "View all FAQ"
 

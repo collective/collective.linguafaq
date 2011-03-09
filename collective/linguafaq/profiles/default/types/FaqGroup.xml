@@ -16,10 +16,10 @@
     <element value="FaqItem" />
   </property>
   <property name="allow_discussion">False</property>
-  <property name="default_view">faqview</property>
+  <property name="default_view">base_view</property>
   <property name="view_methods">
-    <element value="faqview" />
-    <element value="faq_second_view" />
+    <element value="index_view" />
+    <element value="all_view" />
     <element value="base_view" />
   </property>
   <alias from="(Default)" to="(dynamic view)" />

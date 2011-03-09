@@ -1,0 +1,59 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="collective.linguafaq">
+<body>
+    <div metal:fill-slot="main">
+        <tal:main-macro metal:define-macro="main"
+                        tal:define="group view/getAllFaq;">
+            <h1 tal:content="context/title"> Title </h1>        
+            <!-- index -->
+            <ul class="indexfaq">            
+                <li tal:repeat="agroup group" >  
+                    <a href="" tal:attributes="href string:#${agroup/title}"  tal:content="agroup/title"> 
+                        title  
+                    </a>
+                    <ul tal:condition="python:len(agroup['faqs'])>0">
+                        <li tal:repeat="faq agroup/faqs">
+                            <a href="" tal:attributes="href string:#${faq/title}" tal:content="faq/title">
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- faqs -->
+            <br />
+            <hr class="separateindex" /> 
+            
+            <ul class="indexfaq">            
+                <li tal:repeat="agroup group" >  
+                    <h2>
+                        <a href="" tal:attributes="href agroup/url; name agroup/title;"  tal:content="agroup/title"> 
+                            title  
+                        </a>
+                    </h2>
+                    <a href="javascript:scroll(0,0)" class="to-the-top">Top</a>
+                    <span tal:condition="python:len(agroup['faqs'])==0" tal:content="structure agroup/answer">
+                        answer
+                    </span>
+                    <ul tal:condition="python:len(agroup['faqs'])>0">
+                        <li tal:repeat="faq agroup/faqs">
+                            <h2>
+                                <a href="" tal:attributes="href faq/url; name faq/title"  tal:content="faq/title"> 
+                                    title  
+                                </a>
+                            </h2>
+                            <a href="javascript:scroll(0,0)" class="to-the-top">Top</a>
+                            <span tal:content="structure faq/answer">
+                                answer
+                            </span>
+                        </li>
+                    </ul>
+                </li>
+            </ul>            
+           
+            
+        </tal:main-macro>
+    </div>
+</body>
+</html>

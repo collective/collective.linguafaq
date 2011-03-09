@@ -5,6 +5,7 @@ from zope.interface import implements
 
 from Products.Archetypes import atapi
 from Products.ATContentTypes.content import base
+from Products.ATContentTypes.content import document
 from Products.ATContentTypes.content import schemata
 
 
@@ -14,20 +15,10 @@ from collective.linguafaq import linguafaqMessageFactory as _
 from collective.linguafaq.interfaces import IFaqItem
 from collective.linguafaq.config import PROJECTNAME
 
-FaqItemSchema = schemata.ATContentTypeSchema.copy() + atapi.Schema((
+FaqItemSchema = document.ATDocumentSchema.copy() + atapi.Schema((
 
     # -*- Your Archetypes field definitions here ... -*-
 
-    atapi.TextField(
-        'answer',
-        storage=atapi.AnnotationStorage(),
-        widget=atapi.RichWidget(
-            label=_(u"faqanswer"),
-            description=_(u"faqanswerdesc"),
-        ),
-        required=True,
-    ),
-    
     atapi.BooleanField('excludeFromNav',
         required = False,
         languageIndependent = True,
@@ -51,10 +42,14 @@ FaqItemSchema['title'].widget.label = _(u"faqquestion")
 FaqItemSchema['title'].widget.description = _(u"faqquestiondesc")
 #FaqItemSchema['description'].storage = atapi.AnnotationStorage()
 
+FaqItemSchema['text'].storage = atapi.AnnotationStorage()
+FaqItemSchema['text'].widget.label = _(u"faqanswer")
+FaqItemSchema['text'].widget.description = _(u"faqanswerdesc")
+
 schemata.finalizeATCTSchema(FaqItemSchema, moveDiscussion=False)
 
 
-class FaqItem(base.ATCTContent):
+class FaqItem(document.ATDocument):
     """one question and one answer"""
     implements(IFaqItem)
     
@@ -66,8 +61,8 @@ class FaqItem(base.ATCTContent):
 
         
     # -*- Your ATSchema to Python Property Bridges Here ... -*-
-
-    answer = atapi.ATFieldProperty('answer')
+    # answer :
+    text = atapi.ATFieldProperty('text')
 
 
 atapi.registerType(FaqItem, PROJECTNAME)

@@ -4,5 +4,8 @@ Changelog
 0.2 (2011-03-08)
 ----------------
 
+- Add English in locales
+- Add index view
+- Change template for AnySurfer compliant
 - Created recipe with ZopeSkel
   [Benoit Suttor - CIRB/CIBG]

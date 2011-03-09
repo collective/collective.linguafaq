@@ -10,10 +10,5 @@ class IFaqItem(Interface):
 
     # -*- schema definition goes here -*-
     
-    answer = schema.Text(
-        title=_(u"Answer"),
-        required=True,
-        description=_(u"a answer for a question"),
-    )
   
 #
