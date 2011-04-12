@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.4 (unreleased)
+0.4 (2011-04-12)
 ----------------
 
 - Add a view for one single faq (no more the default view)
