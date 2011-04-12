@@ -87,4 +87,5 @@ class faqView(BrowserView):
             else:
                 results.append({"title": obj.Title(), "faqs":[], "url": obj.absolute_url()})
         return results
+        
     

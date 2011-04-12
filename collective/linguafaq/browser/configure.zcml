@@ -9,6 +9,16 @@
 
   <browser:page
       for="*"
+      name="onefaq_view"
+      class=".onefaqview.OnefaqView"
+      template="templates/onefaqview.pt"
+      allowed_interface=".onefaqview.IOnefaqView"
+      permission="zope.Public"
+      />
+
+
+  <browser:page
+      for="*"
       name="index_view"
       class=".faqview.faqView"
       template="templates/index_view.pt"
