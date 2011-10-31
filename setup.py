@@ -56,6 +56,9 @@ setup(name='collective.linguafaq',
 
       [egg_info.writers]
       paster_plugins.txt = setuptools.command.egg_info:write_arg
+
+      [z3c.autoinclude.plugin]
+      target = plone
       """,
       paster_plugins = ["ZopeSkel"],
       )
