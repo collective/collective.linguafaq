@@ -36,7 +36,8 @@ recipe to manage your project, you can do this:
         ...
         collective.linguafaq
        
-* Tell the plone.recipe.zope2instance recipe to install a ZCML slug:
+* If you use a Plone version older than 3.3, you must also tell the
+  plone.recipe.zope2instance recipe to install a ZCML slug::
 
     [instance]
     recipe = plone.recipe.zope2instance
@@ -44,9 +45,10 @@ recipe to manage your project, you can do this:
     zcml =
         collective.linguafaq
       
+        
+  You can skip this step if you are going to explicitly include the
+  package from another package's `configure.zcml` file.
+
 * Re-run buildout, e.g. with:
 
     $ ./bin/buildout
-        
-You can skip the ZCML slug if you are going to explicitly include the package
-from another package's configure.zcml file.
