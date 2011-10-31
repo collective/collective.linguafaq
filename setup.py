@@ -13,23 +13,11 @@ version = '0.5dev'
 long_description = (
     read('README.txt')
     + '\n' +
-    'Change history\n'
-    '**************\n'
-    + '\n' +
     read('CHANGES.txt')
-    + '\n' +
-    'Detailed Documentation\n'
-    '**********************\n'
     + '\n' +
     read('collective', 'linguafaq', 'README.txt')
     + '\n' +
-    'Contributors\n'
-    '************\n'
-    + '\n' +
     read('CONTRIBUTORS.txt')
-    + '\n' +
-    'Download\n'
-    '********\n'
     )
 
 tests_require=['zope.testing']
@@ -45,7 +33,7 @@ setup(name='collective.linguafaq',
         'Topic :: Software Development :: Libraries :: Python Modules',
         'License :: OSI Approved :: GNU General Public License (GPL)',
         ],
-      keywords='',
+      keywords='plone faq',
       author='Benoit Suttor - CIRB/CIBG',
       author_email='bsuttor@cirb.irisnet.be',
       url='http://www.cirb.irisnet.be',

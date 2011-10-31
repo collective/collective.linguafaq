@@ -1,5 +1,5 @@
-Introduction
-============
+Detailed information
+====================
 
 This is a full-blown functional test. The emphasis here is on testing what
 the user may input and see, and the system is largely tested as a black box.
@@ -52,16 +52,15 @@ And we ensure that we get the friendly logged-in message:
     True
 
 
--*- extra stuff goes here -*-
 The FaqGroup content type
-===============================
+-------------------------
 
 In this section we are tesing the FaqGroup content type by performing
 basic operations like adding, updadating and deleting FaqGroup content
 items.
 
 Adding a new FaqGroup content item
---------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 We use the 'Add new' menu to add a new content item.
 
@@ -85,7 +84,7 @@ Now we fill the form and submit it.
 And we are done! We added a new 'FaqGroup' content item to the portal.
 
 Updating an existing FaqGroup content item
----------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Let's click on the 'edit' tab and update the object attribute values.
 
@@ -101,7 +100,7 @@ We check that the changes were applied.
     True
 
 Removing a/an FaqGroup content item
---------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If we go to the home page, we can see a tab with the 'New FaqGroup
 Sample' title in the global navigation tabs.
@@ -131,7 +130,7 @@ Sample' tab.
     False
 
 Adding a new FaqGroup content item as contributor
-------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Not only site managers are allowed to add FaqGroup content items, but
 also site contributors.
@@ -177,14 +176,14 @@ Finally, let's login back as manager.
 
 
 The FaqItem content type
-===============================
+------------------------
 
 In this section we are tesing the FaqItem content type by performing
 basic operations like adding, updadating and deleting FaqItem content
 items.
 
 Adding a new FaqItem content item
---------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 We use the 'Add new' menu to add a new content item.
 
@@ -208,7 +207,7 @@ Now we fill the form and submit it.
 And we are done! We added a new 'FaqItem' content item to the portal.
 
 Updating an existing FaqItem content item
----------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Let's click on the 'edit' tab and update the object attribute values.
 
@@ -224,7 +223,7 @@ We check that the changes were applied.
     True
 
 Removing a/an FaqItem content item
---------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If we go to the home page, we can see a tab with the 'New FaqItem
 Sample' title in the global navigation tabs.
@@ -254,7 +253,7 @@ Sample' tab.
     False
 
 Adding a new FaqItem content item as contributor
-------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Not only site managers are allowed to add FaqItem content items, but
 also site contributors.
@@ -300,14 +299,14 @@ Finally, let's login back as manager.
 
 
 The FaqFolder content type
-===============================
+--------------------------
 
 In this section we are tesing the FaqFolder content type by performing
 basic operations like adding, updadating and deleting FaqFolder content
 items.
 
 Adding a new FaqFolder content item
---------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 We use the 'Add new' menu to add a new content item.
 
@@ -331,7 +330,7 @@ Now we fill the form and submit it.
 And we are done! We added a new 'FaqFolder' content item to the portal.
 
 Updating an existing FaqFolder content item
----------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Let's click on the 'edit' tab and update the object attribute values.
 
@@ -347,7 +346,7 @@ We check that the changes were applied.
     True
 
 Removing a/an FaqFolder content item
---------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If we go to the home page, we can see a tab with the 'New FaqFolder
 Sample' title in the global navigation tabs.
@@ -377,7 +376,7 @@ Sample' tab.
     False
 
 Adding a new FaqFolder content item as contributor
-------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Not only site managers are allowed to add FaqFolder content items, but
 also site contributors.

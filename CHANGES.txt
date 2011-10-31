@@ -4,8 +4,7 @@ Changelog
 0.5 (unreleased)
 ----------------
 
-- Nothing changed yet.
-
+- Fix rst markup in documentation formatting [khink]
 
 0.4 (2011-04-12)
 ----------------
