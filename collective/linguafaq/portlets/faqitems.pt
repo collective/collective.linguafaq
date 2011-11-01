@@ -20,7 +20,8 @@
       <dd class="portletItem"
           tal:define="oddrow repeat/faqitem/odd"
           tal:attributes="class python:oddrow and 'portletItem even' or 'portletItem odd'">
-        <a tal:attributes="href string:${faqitem/getURL}">
+        <a tal:attributes="href string:${faqitem/getURL}"
+            class="faqItemLink">
           <tal:title content="faqitem/Title">
             [Title]
           </tal:title>

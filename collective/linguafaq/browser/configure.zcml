@@ -35,5 +35,9 @@
       permission="zope.Public"
       />
 
+  <browser:resourceDirectory
+      name="collective.linguafaq.javascripts"
+      directory="javascripts"
+      />
 
 </configure>
