@@ -13,15 +13,14 @@
     <for interface="plone.app.portlets.interfaces.IDashboard" />
   </portlet>
 
-  <!--
   <assignment
-      type="collective.subscribablesections.Sections"
+      type="collective.linguafaq.FaqItems"
       manager="plone.rightcolumn"
       category="context"
       key="/"
-      name="collective.subscribablesections.Sections"
+      name="collective.linguafaq.FaqItems"
       insert-before="*"
       >
     </assignment>
-  -->
+
 </portlets>
