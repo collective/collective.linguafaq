@@ -1,8 +1,27 @@
 <?xml version="1.0"?>
-<!-- This file is used to register new types of portlets. It can also
-     be used to register completely new column types. See CMFPlone's version
-     of this file for more information.
+<portlets
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    i18n:domain="collective.linguafaq">
+
+  <portlet
+    addview="collective.linguafaq.FaqItems"
+    title="Faq Items"
+    description="A portlet which shows FAQ items"
+    i18n:attributes="title title_faqitems_portlet;
+                     description description_faqitems_portlet">
+    <for interface="plone.app.portlets.interfaces.IColumn" />
+    <for interface="plone.app.portlets.interfaces.IDashboard" />
+  </portlet>
+
+  <!--
+  <assignment
+      type="collective.subscribablesections.Sections"
+      manager="plone.rightcolumn"
+      category="context"
+      key="/"
+      name="collective.subscribablesections.Sections"
+      insert-before="*"
+      >
+    </assignment>
   -->
-<portlets>
-  <!-- -*- extra stuff goes here -*- -->
 </portlets>
