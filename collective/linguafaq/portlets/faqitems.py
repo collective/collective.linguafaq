@@ -65,5 +65,5 @@ class Renderer(base.Renderer):
             'object_provides': IFaqItem.__identifier__,
             'sort_on' : 'modified',
             }
-        results = self.catalog.searchResults(**query)
+        results = self.catalog.searchResults(**query)[:5]
         return results
