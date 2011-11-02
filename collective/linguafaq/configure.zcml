@@ -28,7 +28,21 @@
   <!-- Rule triggers -->
   <subscriber
       for=".event.IUsefulnessEvent"
-      handler=".handlers.view_called"
+      handler=".handlers.usefulness_rated"
+      />
+
+  <adapter
+      for="Products.CMFCore.interfaces.IContentish"
+      provides="plone.stringinterp.interfaces.IStringSubstitution"
+      factory=".adapters.usefulnessRatingCommentSubstitution"
+      name="usefulness_comment"
+      />
+
+  <adapter
+      for="Products.CMFCore.interfaces.IContentish"
+      provides="plone.stringinterp.interfaces.IStringSubstitution"
+      factory=".adapters.usefulnessRatingValueSubstitution"
+      name="usefulness_value"
       />
 
   <!-- Register the installation GenericSetup extension profile -->
@@ -40,8 +54,6 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
   
-  <!-- -*- extra stuff goes here -*- -->
-  
   <!-- File System Directory Views registration -->
   <cmf:registerDirectory 
       name="linguafaq_images"
@@ -52,4 +64,5 @@
       name="linguafaq_scripts"
       recursive="True"
       />
+
 </configure>

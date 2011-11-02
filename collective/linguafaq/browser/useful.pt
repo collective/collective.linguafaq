@@ -16,9 +16,10 @@
     <input type="radio" name="useful" value="0" />
     <span i18n:domain="plone" i18n:translate="">No</span>
     <span class="comments" style="display: none;">
-      Why?
+      <span i18n:translate="label_why">Why?</span>
       <input type="text" name="comment" />
-      <input type="submit" name="Submit" value="Submit" />
+      <input type="submit" name="Submit" value="Submit"
+          i18n:domain="plone" i18n:attributes="value" />
     </span>
   </form>
 </div>
