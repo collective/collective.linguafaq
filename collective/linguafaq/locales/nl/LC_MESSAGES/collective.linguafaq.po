@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: collective.linguafaq 1.0\n"
-"POT-Creation-Date: 2010-05-26 14:08+0000\n"
+"POT-Creation-Date: 2011-11-02 15:07+0000\n"
 "PO-Revision-Date: 2010-05-28 14:28+0100\n"
 "Last-Translator: Suttor <bsuttor@cirb.irisnet.be>\n"
 "Language-Team: \n"
@@ -15,40 +15,96 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: collective.linguafaq\n"
 
-msgid "faqfolder"
-msgstr "FAQ Map"
+#: ./portlets/faqitems.py:27
+msgid "Add FAQ items portlet"
+msgstr ""
 
-msgid "faqfolderdescription"
-msgstr "Algemeen FAQ map"
+#: ./portlets/faqitems.py:23
+msgid "FAQ items"
+msgstr ""
 
-msgid "faqitem"
-msgstr "Een FAQ"
+#: ./portlets/faqitems.py:28
+msgid "This portlet lists FAQ items."
+msgstr ""
 
-msgid "faqitemdescription"
-msgstr "Een vraag en een antwoord"
+#: ./browser/onefaqview.py:40
+msgid "a dummy string"
+msgstr ""
 
-msgid "faqgroup"
-msgstr "FAQ Groep"
+#. Default: "A portlet which shows FAQ items"
+#: ./profiles/default/portlets.xml
+msgid "description_faqitems_portlet"
+msgstr ""
 
-msgid "faqgroupdescription"
-msgstr "faqgroupdescription"
-
-msgid "faqquestion"
-msgstr "Vraag"
-
-msgid "faqquestiondesc"
-msgstr "A vraag"
-
+#: ./content/faqitem.py:46
 msgid "faqanswer"
 msgstr "Antwoord"
 
+#: ./content/faqitem.py:47
 msgid "faqanswerdesc"
 msgstr "Een antwoord voor de vraag"
 
-# view
-msgid "index_view"
-msgstr "Zie index FAQ"
+#. Default: "faqfolder"
+#: ./profiles/default/types/FaqFolder.xml
+msgid "faqfolder"
+msgstr "FAQ Map"
 
-msgid "all_view"
-msgstr "Zie alle FAQ"
+#. Default: "Description of the FAQ"
+#: ./profiles/default/types/FaqFolder.xml
+msgid "faqfolderdescription"
+msgstr "Algemeen FAQ map"
 
+#. Default: "faqgroup"
+#: ./profiles/default/types/FaqGroup.xml
+msgid "faqgroup"
+msgstr "FAQ Groep"
+
+#. Default: "classify faq"
+#: ./profiles/default/types/FaqGroup.xml
+msgid "faqgroupdesciption"
+msgstr ""
+
+#. Default: "faqitem"
+#: ./profiles/default/types/FaqItem.xml
+msgid "faqitem"
+msgstr "Een FAQ"
+
+#. Default: "one question and one answer"
+#: ./profiles/default/types/FaqItem.xml
+msgid "faqitemdescription"
+msgstr "Een vraag en een antwoord"
+
+#: ./content/faqitem.py:41
+msgid "faqquestion"
+msgstr "Vraag"
+
+#: ./content/faqitem.py:42
+msgid "faqquestiondesc"
+msgstr "A vraag"
+
+#. Default: "If selected, this item will not appear in the navigation tree"
+#: ./content/faqgroup.py:25
+#: ./content/faqitem.py:27
+msgid "help_exclude_from_nav"
+msgstr ""
+
+#. Default: "Exclude from navigation"
+#: ./content/faqgroup.py:26
+#: ./content/faqitem.py:28
+msgid "label_exclude_from_nav"
+msgstr ""
+
+#. Default: "Was this information useful?"
+#: ./browser/useful.pt:10
+msgid "label_was_this_useful"
+msgstr "Was deze informatie nuttig?"
+
+#. Default: "Thank you for voting!"
+#: ./browser/usefulness.py:44
+msgid "message_thank_you"
+msgstr "Bedankt voor uw mening!"
+
+#. Default: "Faq Items"
+#: ./profiles/default/portlets.xml
+msgid "title_faqitems_portlet"
+msgstr ""

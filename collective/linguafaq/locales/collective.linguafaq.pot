@@ -1,11 +1,13 @@
-# Gettext Message File for collective.linguafaq
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
-"Project-Id-Version: collective.linguafaq 1.0\n"
-"POT-Creation-Date: 2010-05-26 14:08+0000\n"
-"PO-Revision-Date: 2010-05-26 18:17+0200\n"
-"Last-Translator: benoit suttor <bsuttor@cirb.irisnet.be>\n"
-"Language-Team: \n"
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-11-02 15:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -15,44 +17,97 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: collective.linguafaq\n"
 
-msgid "faqfolder"
-msgstr "Faq Folder"
+#: ./portlets/faqitems.py:27
+msgid "Add FAQ items portlet"
+msgstr ""
 
-msgid "faqfolderdescription"
-msgstr "Faq Folder desc"
+#: ./portlets/faqitems.py:23
+msgid "FAQ items"
+msgstr ""
 
+#: ./portlets/faqitems.py:28
+msgid "This portlet lists FAQ items."
+msgstr ""
 
-msgid "faqitem"
-msgstr "A Faq"
+#: ./browser/onefaqview.py:40
+msgid "a dummy string"
+msgstr ""
 
-msgid "faqitemdescription"
-msgstr "A Faq desc"
+#. Default: "A portlet which shows FAQ items"
+#: ./profiles/default/portlets.xml
+msgid "description_faqitems_portlet"
+msgstr ""
 
-
-msgid "faqgroup"
-msgstr "A faq group"
-
-msgid "faqgroupdescription"
-msgstr "A Faq desc"
-
-
-msgid "faqquestion"
-msgstr "Question"
-
-msgid "faqquestiondesc"
-msgstr "A Question"
-
-
+#: ./content/faqitem.py:46
 msgid "faqanswer"
-msgstr "Answer"
+msgstr ""
 
+#: ./content/faqitem.py:47
 msgid "faqanswerdesc"
-msgstr "A answer to a question"
+msgstr ""
 
-#view
-msgid "faq_view_view"
-msgstr "Faq group view"
+#. Default: "faqfolder"
+#: ./profiles/default/types/FaqFolder.xml
+msgid "faqfolder"
+msgstr ""
 
-msgid "faq_second_view"
-msgstr "Faq view"
+#. Default: "Description of the FAQ"
+#: ./profiles/default/types/FaqFolder.xml
+msgid "faqfolderdescription"
+msgstr ""
+
+#. Default: "faqgroup"
+#: ./profiles/default/types/FaqGroup.xml
+msgid "faqgroup"
+msgstr ""
+
+#. Default: "classify faq"
+#: ./profiles/default/types/FaqGroup.xml
+msgid "faqgroupdesciption"
+msgstr ""
+
+#. Default: "faqitem"
+#: ./profiles/default/types/FaqItem.xml
+msgid "faqitem"
+msgstr ""
+
+#. Default: "one question and one answer"
+#: ./profiles/default/types/FaqItem.xml
+msgid "faqitemdescription"
+msgstr ""
+
+#: ./content/faqitem.py:41
+msgid "faqquestion"
+msgstr ""
+
+#: ./content/faqitem.py:42
+msgid "faqquestiondesc"
+msgstr ""
+
+#. Default: "If selected, this item will not appear in the navigation tree"
+#: ./content/faqgroup.py:25
+#: ./content/faqitem.py:27
+msgid "help_exclude_from_nav"
+msgstr ""
+
+#. Default: "Exclude from navigation"
+#: ./content/faqgroup.py:26
+#: ./content/faqitem.py:28
+msgid "label_exclude_from_nav"
+msgstr ""
+
+#. Default: "Was this information useful?"
+#: ./browser/useful.pt:10
+msgid "label_was_this_useful"
+msgstr ""
+
+#. Default: "Thank you for voting!"
+#: ./browser/usefulness.py:44
+msgid "message_thank_you"
+msgstr ""
+
+#. Default: "Faq Items"
+#: ./profiles/default/portlets.xml
+msgid "title_faqitems_portlet"
+msgstr ""
 

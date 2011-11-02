@@ -32,6 +32,13 @@
       permission="zope.Public"
       />
 
+  <browser:page
+      for="collective.linguafaq.interfaces.IFaqItem"
+      name="usefulness-form"
+      class=".usefulness.UsefulnessView"
+      permission="zope2.View"
+      />
+
   <browser:viewlet
       name="collective.linguafaq.WasThisUseful"
       for="collective.linguafaq.interfaces.IFaqItem"

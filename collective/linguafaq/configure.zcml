@@ -8,12 +8,29 @@
 
   <five:registerPackage package="." initialize=".initialize" />
 
+  <include package="plone.contentrules" />
+  <include package="plone.contentrules" file="meta.zcml" />
+
   <!-- Include the sub-packages that use their own configure.zcml files. -->
   <include package=".browser" />
   <include package=".content" />
   <include package=".portlets" />
   <i18n:registerTranslations directory="locales" />
   
+  <!-- Make the object related events selectable -->
+  <interface
+    interface=".event.IUsefulnessEvent"
+    type="plone.contentrules.rule.interfaces.IRuleEventType"
+    name="Usefulness rating added"
+    />
+
+  <!-- Register handlers -->
+  <!-- Rule triggers -->
+  <subscriber
+      for=".event.IUsefulnessEvent"
+      handler=".handlers.view_called"
+      />
+
   <!-- Register the installation GenericSetup extension profile -->
   <genericsetup:registerProfile
       name="default"
