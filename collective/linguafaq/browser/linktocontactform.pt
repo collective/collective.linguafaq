@@ -1,0 +1,18 @@
+<div tal:omit-tag=""
+    tal:define="contact_action view/contact_action"
+    tal:condition="contact_action"
+    i18n:domain="plone">
+
+    <a tal:define="
+           title contact_action/title;
+           "
+       i18n:attributes="title"
+       i18n:translate=""
+       tal:content="title"
+       tal:attributes="
+           href contact_action/url;
+           title title;
+           "
+       >Site action</a>
+
+</div>
