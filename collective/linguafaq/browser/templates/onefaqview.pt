@@ -3,11 +3,10 @@
       metal:use-macro="here/main_template/macros/master"
       i18n:domain="collective.linguafaq">
 <body>
-    <div metal:fill-slot="main">
+    <div metal:fill-slot="content-core">
         <tal:main-macro metal:define-macro="main"
                         tal:define="view view/onefaq">
 
-            <h1 tal:content="context/title"> Title </h1>            
             <p tal:content="structure context/text"> Text </p> 
 
         </tal:main-macro>
