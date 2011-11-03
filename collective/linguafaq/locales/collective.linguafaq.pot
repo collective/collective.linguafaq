@@ -96,21 +96,6 @@ msgstr ""
 msgid "label_exclude_from_nav"
 msgstr ""
 
-#. Default: "Was this information useful?"
-#: ./browser/useful.pt:10
-msgid "label_was_this_useful"
-msgstr ""
-
-#. Default: "Why?"
-#: ./browser/useful.pt:19
-msgid "label_why"
-msgstr ""
-
-#. Default: "Thank you for voting!"
-#: ./browser/usefulness.py:44
-msgid "message_thank_you"
-msgstr ""
-
 #. Default: "Faq Items"
 #: ./profiles/default/portlets.xml
 msgid "title_faqitems_portlet"

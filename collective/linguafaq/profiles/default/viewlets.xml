@@ -1,8 +1,6 @@
 <?xml version="1.0"?>
 <object>
   <order manager="plone.belowcontent" >
-    <viewlet name="collective.linguafaq.WasThisUseful" 
-        insert-before="*" />
     <viewlet name="collective.linguafaq.LinkToContactForm" 
         insert-before="*" />
   </order>
