@@ -10,11 +10,11 @@ object's language using the "Language" field.
 
 Features:
 
-- two views for a FAQ Folder:
+- Two views for a FAQ Folder:
 
   * `index_view` shows links to FAQ Items in the FAQ Folder
   * `all_view` shows FAQ Items and their answers on one page
-
-- a portlet for showing most recent FAQ items
-- a viewlet on FAQ Items to say whether the information was useful or not
-- a viewlet on FAQ Items which displays a link to the contact form
+- A viewlet on FAQ Items which displays a link to the contact form.
+- The FAQ Folder's views are available also on a Topic, so you can
+  compose Topics of FAQ Items according to your own criteria and
+  view them in the same way you would view a FAQ Folder.

@@ -5,10 +5,9 @@ Changelog
 ----------------
 
 - Fix rst markup in documentation formatting
-- Add portlet
 - Add viewlet to link to contact form
 - Show "related items" in `onefaqview`.
-- Add Event to use in Content Rule (for sending mail when vote is added).
+
 
 0.4 (2011-04-12)
 ----------------
