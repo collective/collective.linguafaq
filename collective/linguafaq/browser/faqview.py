@@ -2,7 +2,6 @@ from zope.interface import implements, Interface
 
 from Products.Five import BrowserView
 from Products.CMFCore.utils import getToolByName
-from Products.statusmessages.interfaces import IStatusMessage
 
 from collective.linguafaq import linguafaqMessageFactory as _
 
