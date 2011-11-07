@@ -18,3 +18,4 @@ Features:
 - The FAQ Folder's views are available also on a Topic, so you can
   compose Topics of FAQ Items according to your own criteria and
   view them in the same way you would view a FAQ Folder.
+- In a CollectionPortlet with id `faq`, links will be opened in an overlay.
