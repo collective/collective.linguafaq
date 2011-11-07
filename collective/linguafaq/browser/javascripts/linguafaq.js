@@ -1,7 +1,7 @@
 var linguafaq = {
 
     expandFaqItemAnswer: function() {
-        $('.portletCollection .portletItem a').prepOverlay({
+        $('.portlet-collection-faq .portletItem a').prepOverlay({
             subtype: 'ajax',
             });
     } // no comma after last item
