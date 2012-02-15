@@ -1,0 +1,54 @@
+# Gettext Message File for collective.linguafaq
+msgid ""
+msgstr ""
+"Project-Id-Version: collective.linguafaq 1.0\n"
+"POT-Creation-Date: 2012-02-15 11:50+0000\n"
+"PO-Revision-Date: 2010-05-28 14:28+0100\n"
+"Last-Translator: Andre Nogueira <andre@simplesconsultoria.com.br>\n"
+"Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
+"Language-Code: pt-br\n"
+"Language-Name: Português do Brasil\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: collective.linguafaq\n"
+
+msgid "faqfolder"
+msgstr "Pasta de FAQ"
+
+msgid "faqfolderdescription"
+msgstr "Descrição da Pasta de FAQ"
+
+msgid "faqitem"
+msgstr "Uma FAQ"
+
+msgid "faqitemdescription"
+msgstr "Uma pergunta e resposta"
+
+msgid "faqgroup"
+msgstr "Grupo de FAQ"
+
+msgid "faqgroupdescription"
+msgstr "Descrição do Grupo de FAQ"
+
+msgid "faqquestion"
+msgstr "Pergunta"
+
+msgid "faqquestiondesc"
+msgstr "Uma pergunta"
+
+msgid "faqanswer"
+msgstr "Resposta"
+
+msgid "faqanswerdesc"
+msgstr "Uma resposta para a pergunta"
+
+# view
+msgid "index_view"
+msgstr "Índice"
+
+msgid "all_view"
+msgstr "Todo o conteúdo"
+
