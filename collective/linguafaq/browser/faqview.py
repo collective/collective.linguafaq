@@ -70,6 +70,7 @@ class faqView(BrowserView):
                 group['title']=obj.Title()
                 group['url']=obj.absolute_url()
                 list_faq=[]
+                cat = self.portal_catalog
                 url = '/'.join(obj.getPhysicalPath())
                 faqitems = cat.searchResults( {'portal_type' :'FaqItem','path':url} , 
                                 sort_on='sortable_title', sort_order='ascending')
@@ -92,6 +93,7 @@ class faqView(BrowserView):
                 group['title']=obj.Title()
                 group['url']=obj.absolute_url()
                 list_faq=[]
+                cat = self.portal_catalog
                 url = '/'.join(obj.getPhysicalPath())
                 faqitems = cat.searchResults( {'portal_type' :'FaqItem','path':url} , 
                                 sort_on='sortable_title', sort_order='ascending')
