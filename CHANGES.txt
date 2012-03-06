@@ -4,6 +4,7 @@ Changelog
 0.5 (unreleased)
 ----------------
 
+- Fixed "NameError: global name 'cat' is not defined". [hvelarde]
 - Fix rst markup in documentation formatting
 - Add viewlet to link to contact form
 - Show "related items" in `onefaqview`.
