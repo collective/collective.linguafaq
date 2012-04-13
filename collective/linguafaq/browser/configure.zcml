@@ -1,6 +1,7 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
     i18n_domain="collective.linguafaq">
 
   <include package="plone.app.contentmenu" />
@@ -31,6 +32,26 @@
       allowed_interface=".faqview.IfaqView"
       permission="zope.Public"
       />
+
+  <browser:menuItem
+      for="*"
+      menu="plone_displayviews"
+      title="Index"
+      action="index_view"
+      description="View the indices of all FAQs"
+      i18n:attributes="title; description"
+      />
+
+  <browser:menuItem
+      for="*"
+      menu="plone_displayviews"
+      title="All FAQs"
+      action="all_view"
+      description="View all FAQs in one view"
+      i18n:attributes="title; description"
+      />
+
+
 
   <browser:viewlet
       name="collective.linguafaq.LinkToContactForm"

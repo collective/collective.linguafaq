@@ -20,6 +20,7 @@
       directory="profiles/default"
       description="A simple multilanguage faq"
       provides="Products.GenericSetup.interfaces.EXTENSION"
+      i18n:attributes="title; description"
       />
   
   <!-- File System Directory Views registration -->
