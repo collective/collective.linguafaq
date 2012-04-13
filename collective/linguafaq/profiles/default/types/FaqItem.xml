@@ -15,8 +15,6 @@
   <property name="allow_discussion">False</property>
   <property name="default_view">onefaq_view</property>
   <property name="view_methods">
-    <element value="onefaq_view" />
-    <element value="base_view" />
   </property>
   <alias from="(Default)" to="(dynamic view)" />
   <alias from="edit" to="atct_edit" />

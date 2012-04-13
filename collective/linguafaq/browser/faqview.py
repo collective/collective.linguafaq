@@ -44,12 +44,12 @@ class faqView(BrowserView):
            queryCatalog().
         """
         view_context_type = self.context.portal_type
-        assert view_context_type in ['FaqFolder', 'Topic']
+        assert view_context_type in ['FaqGroup','FaqFolder','Topic']
         query = {
             'sort_order': 'ascending',
             'sort_on': 'sortable_title',
             }
-        if view_context_type == 'FaqFolder':
+        if view_context_type == 'FaqFolder' or view_context_type == 'FaqGroup':
             cat = self.portal_catalog
             folder_path = "/".join(self.context.getPhysicalPath())
             query.update({'path': {'query': folder_path, 'depth': 1}, })
