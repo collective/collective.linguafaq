@@ -4,7 +4,10 @@ Changelog
 0.5 (unreleased)
 ----------------
 
+- Fix view entry for types [lepri]
+- Create menu entry for views [lepri]
 - Fixed "NameError: global name 'cat' is not defined". [hvelarde]
+- Brazilian portuguese translation added [lepri]
 - Fix rst markup in documentation formatting
 - Add viewlet to link to contact form
 - Show "related items" in `onefaqview`.

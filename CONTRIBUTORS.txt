@@ -2,4 +2,6 @@ Contributors
 ============
 
 Benoit Suttor - CIRB/CIBG, Author
+Gustavo Lepri [lepri]
+Héctor Velarde [hvelarde]
 
