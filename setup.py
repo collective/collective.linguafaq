@@ -5,6 +5,7 @@ This module contains the tool of collective.linguafaq
 import os
 from setuptools import setup, find_packages
 
+
 def read(*rnames):
     return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
 
@@ -20,18 +21,25 @@ long_description = (
     read('CONTRIBUTORS.txt')
     )
 
-tests_require=['zope.testing']
 
 setup(name='collective.linguafaq',
       version=version,
       description="A simple multilanguage faq",
       long_description=long_description,
-      # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
+        "Development Status :: 3 - Alpha",
+        "Environment :: Web Environment",
         'Framework :: Plone',
-        'Intended Audience :: Developers',
-        'Topic :: Software Development :: Libraries :: Python Modules',
-        'License :: OSI Approved :: GNU General Public License (GPL)',
+        # "Framework :: Plone :: 3.3",
+        "Framework :: Plone :: 4.0",
+        "Framework :: Plone :: 4.1",
+        "Framework :: Plone :: 4.2",
+        "Intended Audience :: End Users/Desktop",
+        "Intended Audience :: System Administrators",
+        "License :: OSI Approved :: GNU General Public License (GPL)",
+        "Operating System :: OS Independent",
+        "Programming Language :: Python",
+        "Topic :: Software Development :: Libraries :: Python Modules",
         ],
       keywords='plone faq',
       author='Benoit Suttor - CIRB/CIBG',
@@ -42,15 +50,14 @@ setup(name='collective.linguafaq',
       namespace_packages=['collective', ],
       include_package_data=True,
       zip_safe=False,
-      install_requires=['setuptools',
-                        # -*- Extra requirements: -*-
-                        #'Products.LinguaPlone',
-                        ],
-      tests_require=tests_require,
-      extras_require=dict(tests=tests_require),
-      test_suite = 'collective.linguafaq.tests.test_docs.test_suite',
+      install_requires=[
+        'setuptools',
+        ],
+      extras_require={
+        'test': ['plone.app.testing'],
+        },
       entry_points="""
-      # -*- entry_points -*- 
+      # -*- entry_points -*-
       [distutils.setup_keywords]
       paster_plugins = setuptools.dist:assert_string_list
 
@@ -60,5 +67,5 @@ setup(name='collective.linguafaq',
       [z3c.autoinclude.plugin]
       target = plone
       """,
-      paster_plugins = ["ZopeSkel"],
+      paster_plugins=["ZopeSkel"],
       )
