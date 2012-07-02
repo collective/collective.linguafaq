@@ -4,6 +4,10 @@ Changelog
 0.5 (unreleased)
 ----------------
 
+- Tested Plone 4.2 compatibility. [hvelarde]
+- Added installation and content type tests. [hvelarde]
+- Added buildout configurations for development and testing. [hvelarde]
+- Fixed package distribution. [hvelarde]
 - Fix view entry for types [lepri]
 - Create menu entry for views [lepri]
 - Fixed "NameError: global name 'cat' is not defined". [hvelarde]
@@ -27,3 +31,4 @@ Changelog
 - Change template for AnySurfer compliant
 - Created recipe with ZopeSkel
   [Benoit Suttor - CIRB/CIBG]
+
