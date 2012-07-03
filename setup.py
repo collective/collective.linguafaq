@@ -27,7 +27,7 @@ setup(name='collective.linguafaq',
       description="A simple multilanguage faq",
       long_description=long_description,
       classifiers=[
-        "Development Status :: 3 - Alpha",
+        "Development Status :: 5 - Production/Stable",
         "Environment :: Web Environment",
         'Framework :: Plone',
         # "Framework :: Plone :: 3.3",
