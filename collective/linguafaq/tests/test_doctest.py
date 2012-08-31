@@ -13,6 +13,7 @@ def test_suite():
 
         # Demonstrate the main content types
         ztc.ZopeDocFileSuite(
+            # XXX FIX placement of doctest
             'README.txt', package='collective.linguafaq',
             test_class=base.FunctionalTestCase,
             optionflags=doctest.REPORT_ONLY_FIRST_FAILURE |
