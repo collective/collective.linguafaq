@@ -14,11 +14,9 @@ version = '0.6.dev0'
 long_description = (
     read('README.rst')
     + '\n' +
-    read('CHANGES.txt')
+    read('CHANGES.rst')
     + '\n' +
-    read('collective', 'linguafaq', 'README.txt')
-    + '\n' +
-    read('CONTRIBUTORS.txt')
+    read('CONTRIBUTORS.rst')
     )
 
 
