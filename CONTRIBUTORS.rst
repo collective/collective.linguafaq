@@ -3,5 +3,5 @@ Contributors
 
 - Benoit Suttor - CIRB/CIBG, Author
 - Gustavo Lepri
-- Héctor Velarde
-
+- Hï¿½ctor Velarde
+- Robert Niederreiter

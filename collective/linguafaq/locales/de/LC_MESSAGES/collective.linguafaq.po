@@ -4,51 +4,51 @@ msgstr ""
 "Project-Id-Version: collective.linguafaq 1.0\n"
 "POT-Creation-Date: 2010-05-26 14:08+0000\n"
 "PO-Revision-Date: 2010-05-28 14:28+0100\n"
-"Last-Translator: Suttor <bsuttor@cirb.irisnet.be>\n"
+"Last-Translator: Robert Niederreiter\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0\n"
-"Language-Code: en\n"
-"Language-Name: English\n"
+"Language-Code: de\n"
+"Language-Name: Deutsch\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: collective.linguafaq\n"
 
 msgid "faqfolder"
-msgstr "FAQ Folder"
+msgstr "FAQ Ordner"
 
 msgid "faqfolderdescription"
-msgstr "Description FAQ folder"
+msgstr "Beschreibung FAQ Ordner"
 
 msgid "faqitem"
-msgstr "A FAQ"
+msgstr "FAQ Objekt"
 
 msgid "faqitemdescription"
-msgstr "A question and an answer"
+msgstr "FAQ Frage und Antwort"
 
 msgid "faqgroup"
-msgstr "FAQ Group"
+msgstr "FAQ Gruppe"
 
 msgid "faqgroupdescription"
-msgstr "A group of FAQ Items"
+msgstr "Gruppe von FAQ Objekten"
 
 msgid "faqquestion"
-msgstr "Question"
+msgstr "Frage"
 
 msgid "faqquestiondesc"
-msgstr "A question"
+msgstr "FAQ Frage"
 
 msgid "faqanswer"
-msgstr "Answer"
+msgstr "Antwort"
 
 msgid "faqanswerdesc"
-msgstr "An answer for a question"
+msgstr "Antwort auf die Frage"
 
 # view
 msgid "index_view"
-msgstr "View index FAQ"
+msgstr "Zeige Index FAQ"
 
 msgid "all_view"
-msgstr "View all FAQ"
+msgstr "Zeige alle FAQ"
 

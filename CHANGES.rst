@@ -4,6 +4,9 @@ Changelog
 0.6 (unreleased)
 ----------------
 
+- Fix some english translations, add german translations.
+  [rnix]
+
 - Fixed package classifier: development status must be Production/Stable.
   [hvelarde]
 
