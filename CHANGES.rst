@@ -4,6 +4,9 @@ Changelog
 0.6 (unreleased)
 ----------------
 
+- Configure FAQ types to be linkable in tinymce.
+  [thet]
+
 - Fix some english translations, add german translations.
   [rnix]
 
