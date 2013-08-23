@@ -8,7 +8,7 @@ var linguafaq = {
 
 }
 
-jq(document).ready(function() {
+$(document).ready(function() {
     linguafaq.expandFaqItemAnswer();
 });
 
