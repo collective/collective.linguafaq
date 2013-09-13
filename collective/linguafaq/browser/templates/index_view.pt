@@ -4,28 +4,28 @@
     i18n:domain="collective.linguafaq">
 <body>
   <div metal:fill-slot="main">
-
     <tal:main-macro metal:define-macro="main"
-            tal:define="group view/getAllIndex">
+        define="group view/getAllIndex">
     <h1 class="documentFirstHeading"
-        tal:content="context/title"> Title </h1>    
+        tal:content="context/title">Title</h1>
     <div id="content-core">
-      <ul class="indexfaq">      
-        <li tal:repeat="agroup group"  >  
+      <ul class="indexfaq">
+        <li tal:repeat="agroup group">
           <a href="" tal:attributes="href agroup/url">
-            <h2 tal:content="agroup/title">title</h2>
+            <h2 class="tileHeadline"
+                tal:content="agroup/title">Title</h2>
           </a>
-          <ul tal:condition="python:len(agroup['faqs'])>0">
+          <ul tal:condition="python:len(agroup['faqs']) > 0">
             <li tal:repeat="faq agroup/faqs">
               <a href="" tal:attributes="href faq/url">
-                <h2 tal:content="faq/title">title</h2>
+                <h2 class="tileHeadline"
+                    tal:content="faq/title">Title</h2>
               </a>
             </li>
           </ul>
         </li>
       </ul>
     </div>
-      
     </tal:main-macro>
   </div>
 </body>
