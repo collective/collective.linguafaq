@@ -5,56 +5,46 @@
 <body>
   <div metal:fill-slot="main">
     <tal:main-macro metal:define-macro="main"
-            tal:define="group view/getAllFaq;">
+        define="group view/getAllFaq">
       <h1 class="documentFirstHeading"
-        tal:content="context/title"> Title </h1>    
+          tal:content="context/title">Title</h1>
       <!-- index -->
       <div id="content-core">
-        <ul class="indexfaq">      
-          <li tal:repeat="agroup group" >  
-            <a href="" tal:attributes="href string:#${agroup/title}"  tal:content="agroup/title"> 
-              title  
-            </a>
-            <ul tal:condition="python:len(agroup['faqs'])>0">
+        <ul class="indexfaq">
+          <li tal:repeat="agroup group">
+            <a tal:attributes="href string:#${agroup/title}"
+                tal:content="agroup/title">Title</a>
+            <ul tal:condition="python:len(agroup['faqs']) > 0">
               <li tal:repeat="faq agroup/faqs">
-                <a href="" tal:attributes="href string:#${faq/title}" tal:content="faq/title">
-                </a>
+                <a tal:content="faq/title" tal:attributes="href string:#${faq/title}">Title</a>
               </li>
             </ul>
           </li>
         </ul>
         <!-- faqs -->
         <br />
-        <hr class="separateindex" /> 
-        
-        <ul class="indexfaq">      
-          <li tal:repeat="agroup group" >  
-            <h2>
-              <a href="" tal:attributes="href agroup/url; name agroup/title;"  tal:content="agroup/title"> 
-                title  
-              </a>
-            </h2>
-            <a href="javascript:scroll(0,0)" class="to-the-top">Top</a>
-            <span tal:condition="python:len(agroup['faqs'])==0" tal:content="structure agroup/answer">
-              answer
-            </span>
-            <ul tal:condition="python:len(agroup['faqs'])>0">
+        <hr class="separateindex" />
+        <ul class="indexfaq">
+          <li tal:repeat="agroup group">
+            <h2 class="tileHeadline">
+              <a tal:content="agroup/title"
+                  tal:attributes="href agroup/url;
+                                  name agroup/title">Title</a></h2>
+            <a href="javascript:scroll(0,0)" class="to-the-top" i18n:translate="">Top</a>
+            <span tal:condition="python:len(agroup['faqs']) == 0"
+                tal:content="structure agroup/answer">Answer</span>
+            <ul tal:condition="python:len(agroup['faqs']) > 0">
               <li tal:repeat="faq agroup/faqs">
                 <h2>
-                  <a href="" tal:attributes="href faq/url; name faq/title"  tal:content="faq/title"> 
-                    title  
-                  </a>
-                </h2>
-                <a href="javascript:scroll(0,0)" class="to-the-top">Top</a>
-                <span tal:content="structure faq/answer">
-                  answer
-                </span>
+                  <a tal:content="faq/title"
+                      tal:attributes="href faq/url; name faq/title">Title</a></h2>
+                <a href="javascript:scroll(0,0)" class="to-the-top" i18n:translate="">Top</a>
+                <span tal:content="structure faq/answer">Answer</span>
               </li>
             </ul>
           </li>
         </ul>      
       </div> 
-      
     </tal:main-macro>
   </div>
 </body>
