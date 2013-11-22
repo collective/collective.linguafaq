@@ -4,6 +4,10 @@ Changelog
 0.6 (unreleased)
 ----------------
 
+- Javascript fixes, register CSS as link and let JS beeing cooked, cached and
+  compressed.
+  [thet]
+
 - Configure FAQ types to be linkable in tinymce.
   [thet]
 
